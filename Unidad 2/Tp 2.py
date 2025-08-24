@@ -66,12 +66,28 @@ print("Ingrese 1: si lo que quiere es escribir su nombre en mayúscula:")
 print("Ingrese 2: si lo que quiere es escribir su nombre en minúscula:")
 print("Ingrese 3: si lo que quiere es escribir su nombre en con la primera letra en mayúscula:")
 #evalúo la opción deseada y luego imprime por pantalla#
-opcion=str(input("Ingrese la opción deseada: "))
+opcion=int(input("Ingrese la opción deseada: "))
 if opcion==1:
     nombre=print("Su nombre en mayúscula es:",nombre.upper())
 elif opcion==2:
     nombre=print("Su nombre en minúscula es:",nombre.lower())
 else:
     nombre=print("Su nombre con la primera letra en mayúscula es:",nombre.title())
+#Ejer9#
+#Solicito al usuario que ingrese la magnitud del terremot#
+escala=float(input("Ingrese la magnitud del terremoto:")) 
+#evalúo y de acuerdo a la escala imprime#
+if escala<3:
+    print("Menor que 3: Muy leve, (imperceptible)")  
+elif escala<4:
+    print("Mayor o igual que 3  y menor que 4: Leve (ligeramente perceptible)")
+elif escala<5:
+    print("Mayor o igual que 4  y menor que 5: Moderado (sentido por personas, pero generalmente no causa daños")
+elif escala<6:
+    print("Mayor o igual que 5  y menor que 6: Fuerte (puede causar daños en estructuras débiles)")   
+elif escala<7:
+    print("Mayor o igual que 6  y menor que 7: Muy Fuerte (puede causar daños significativos)")
+else:
+    print("Mayor o igual que 7: Extremo (puede causar graves daños a gran escala)")    
 
-     
+
