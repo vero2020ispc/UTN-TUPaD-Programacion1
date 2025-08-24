@@ -15,26 +15,37 @@ if nota >=6:
 else:
     print("Desaprobado")    
 #Ej3#
-num1=int(input("Ingrese el primer número par: "))
+#solicito al usuario ingrese un número par #
+num1=int(input("Ingrese un número par: "))
+#Divido por dos, si el resto es cero: es par#
 if num1%2==0:
     print("Ha ingresado un número par:")
 else:
     print("Por favor, ingrese un número par")
 #Ej4#
-#4) Escribir un programa que solicite al usuario su edad e imprima por pantalla a cuál de las 
-#siguientes categorías pertenece: 
-#● Niño/a: menor de 12 años. 
-#● Adolescente: mayor o igual que 12 años y menor que 18 años. 
-#● Adulto/a joven: mayor o igual que 18 años y menor que 30 años. 
-#● Adulto/a: mayor o igual que 30 años.#
+#Solicito al usuario que ingrese su edad#
 edad_usuario=int(input("Ingresa tu edad: "))
 #Aquí evalua si el número ingresado es menor  a 12 #
 if edad_usuario < 12:
     print("Usted pertenece a la categoria Niño/a")
+#Aquí evalua si el número ingresado es menor  a 18 #
 elif edad_usuario<18 :
     print("Usted pertenece a la categoria Adolescente")
+ #Aquí evalua si el número ingresado es menor  a 30 #
 elif edad_usuario<30 :
     print("Usted pertenece a la categoria Adulto/a joven") 
 else:
     print("Usted pertenece a la categoria Adulto/a ")       
-   
+#Ej5#
+#5) Escribir un programa que permita introducir contraseñas de entre 8 y 14 caracteres 
+#(incluyendo 8 y 14). Si el usuario ingresa una contraseña de longitud adecuada, imprimir por en 
+#pantalla el mensaje "Ha ingresado una contraseña correcta"; en caso contrario, imprimir por 
+#pantalla "Por favor, ingrese una contraseña de entre 8 y 14 caracteres". Nota: investigue el uso 
+#de la función len() en Python para evaluar la cantidad de elementos que tiene un iterable tal 
+#como una lista o un string.#
+contrasenia=str(input("Ingrese un acontarseña de 8 a 14 caracteres: "))
+longitud=len(contrasenia)
+if longitud>=7 and longitud<=13:
+    print("Ha ingresado una contraseña correcta")
+else:
+    print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
