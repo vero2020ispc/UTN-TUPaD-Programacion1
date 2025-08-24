@@ -58,3 +58,20 @@ if ultima_letra=="a" or ultima_letra=="e" or ultima_letra=="i" or ultima_letra==
    print("La frase ingresada es:", frase +"!")
 else:
     print("La frase ingresada es:", frase)         
+#Ejer8# 
+#solicito al usuario que ingrese su nombre#
+nombre=input(str("Ingrese su nombre:"))
+#solicito al usuario que ingrese la opción deseada#
+print("Ingrese 1: si lo que quiere es escribir su nombre en mayúscula:")
+print("Ingrese 2: si lo que quiere es escribir su nombre en minúscula:")
+print("Ingrese 3: si lo que quiere es escribir su nombre en con la primera letra en mayúscula:")
+#evalúo la opción deseada y luego imprime por pantalla#
+opcion=str(input("Ingrese la opción deseada: "))
+if opcion=="1":
+    nombre=print("Su nombre en mayúscula es:",nombre.upper())
+elif opcion==2:
+    nombre=print("Su nombre en minúscula es:",nombre.lower())
+else:
+    nombre=print("Su nombre en mayúscula es:",nombre.title())
+
+     
