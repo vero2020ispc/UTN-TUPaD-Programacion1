@@ -5,3 +5,8 @@ if longitud>=7 and longitud<=13:
 else:
     print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
 
+frase = str(input("Ingrese un palabra o frase:"))
+longitud=len(frase)
+ultima_letra = frase[longitud-1]
+if ultima_letra==a or ultima_letra==e or ultima_letra==i or ultima_letra==o or ultima_letra==u
+   print("La última letra es:", ultima_letra !)

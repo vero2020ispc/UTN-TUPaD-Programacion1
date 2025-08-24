@@ -37,15 +37,24 @@ elif edad_usuario<30 :
 else:
     print("Usted pertenece a la categoria Adulto/a ")       
 #Ej5#
-#5) Escribir un programa que permita introducir contraseñas de entre 8 y 14 caracteres 
-#(incluyendo 8 y 14). Si el usuario ingresa una contraseña de longitud adecuada, imprimir por en 
-#pantalla el mensaje "Ha ingresado una contraseña correcta"; en caso contrario, imprimir por 
-#pantalla "Por favor, ingrese una contraseña de entre 8 y 14 caracteres". Nota: investigue el uso 
-#de la función len() en Python para evaluar la cantidad de elementos que tiene un iterable tal 
-#como una lista o un string.#
-contrasenia=str(input("Ingrese un acontarseña de 8 a 14 caracteres: "))
+#Solicito al usuario que ingrese una contraseña, aquí a lo que ingrese lo convierto en string para que luego pueda contar la cantidad de caracteres#
+contrasenia=str(input("Ingrese una contraseña de 8 a 14 caracteres: "))
+#calculo la longitud#
 longitud=len(contrasenia)
+#comparo ese valor de longitud#
 if longitud>=7 and longitud<=13:
     print("Ha ingresado una contraseña correcta")
 else:
     print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
+#Ejer7#
+#Solicito al usuario ingrese una palabra o frase#
+frase = str(input("Ingrese un palabra o frase:"))
+#Aquí se la longitud de la frase o palabra#
+longitud=len(frase)
+#Acá consigo la última letra de la frase o palabra#
+ultima_letra = frase[longitud-1]
+#comparo la ultima letra con vocales, si es vocal le agrega el !, sino lo escribe como la ingreso#
+if ultima_letra=="a" or ultima_letra=="e" or ultima_letra=="i" or ultima_letra=="o" or ultima_letra=="u":
+   print("La frase ingresada es:", frase +"!")
+else:
+    print("La frase ingresada es:", frase)         
