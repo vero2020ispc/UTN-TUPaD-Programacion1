@@ -71,8 +71,10 @@ if opcion==1:
     nombre=print("Su nombre en mayúscula es:",nombre.upper())
 elif opcion==2:
     nombre=print("Su nombre en minúscula es:",nombre.lower())
-else:
+elif opcion==3:
     nombre=print("Su nombre con la primera letra en mayúscula es:",nombre.title())
+else:
+    nombre=print("La opción ingresada no es válida, ingrese nuevamente")
 #Ejer9#
 #Solicito al usuario que ingrese la magnitud del terremot#
 escala=float(input("Ingrese la magnitud del terremoto:")) 
@@ -89,5 +91,37 @@ elif escala<7:
     print("Mayor o igual que 6  y menor que 7: Muy Fuerte (puede causar daños significativos)")
 else:
     print("Mayor o igual que 7: Extremo (puede causar graves daños a gran escala)")    
+#Ejer10#
+#Solicito al usuario que ingrese su hemisferio#
+hemisferio=input("Ingrese el hemisferio en el que se encuentra S o N:").upper
+#Solicito día y mes#
+dia = int(input("Ingrese el día: "))
+mes = int(input("Ingrese el mes: "))
+#comparo si hemisferio es igual a N y luego segun el mes y día ingresa en un if#
+if hemisferio=="N":
+    if (mes == 12 and dia >= 21) or (mes <= 3 and dia <= 20):
+        print("La estacion es: Invierno")
+    elif (mes == 3 and dia >= 21) or (mes >= 6 and dia <= 20):
+         print("La estacion es: Primavera")
+    elif (mes == 6 and dia >= 21) or (mes>= 9 and dia <= 20):
+        print("La estacion es: Verano")
+    else:
+        print("La estacion es: Otoño")
+#comparo si hemisferio es igual a S y luego segun el mes y día ingresa en un if#
+elif hemisferio == "S": 
+    if (mes == 12 and dia >= 21) or (mes <= 3 and dia <= 20):
+       print("La estacion es: Verano") 
+    elif (mes == 3 and dia >= 21) or (mes >= 6 and dia <= 20):
+       print("La estacion es: Otoño") 
+    elif (mes == 6 and dia >= 21) or (mes>= 9 and dia <= 20):
+        print("La estacion es: Invierno")
+    else:
+       print("La estacion es: Primavera") 
+else:
+    print("El hemisferio ingresado no corresponde")
+
+
+
+
 
 
