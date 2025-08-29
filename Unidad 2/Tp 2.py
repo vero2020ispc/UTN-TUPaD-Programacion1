@@ -46,6 +46,30 @@ if longitud>=7 and longitud<=13:
     print("Ha ingresado una contraseña correcta")
 else:
     print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")
+#Ejer6#
+#llamo a la statistics que tiene la funciones mode, median, mean#
+from statistics import mode, median, mean 
+#llamo a la función ramdom, para generar numeros aleatorios#
+import random 
+numeros_aleatorios = [random.randint(1, 100) for i in range(10)]
+#Calculo la media, la mediana y la moda#
+media=mean(numeros_aleatorios)
+moda=mode(numeros_aleatorios) 
+mediana=median(numeros_aleatorios)
+#Muestro los datos obtenidos#
+print("Los numeros aleatorios son:", numeros_aleatorios)
+print("La media es:", media) 
+print("La mediana es:", mediana)
+print("La moda es:", moda)
+# aca comparo con el condicional e imprimo segun el resultado#
+if (media>mediana) and (mediana>moda):
+    print("Hay sesgo positivo")
+elif (media<mediana) and (mediana<moda):
+    print("El sesgo es negativo")
+else:
+    if (media==mediana) and (mediana==moda):
+        print("Sin sesgo")
+    
 #Ejer7#
 #Solicito al usuario ingrese una palabra o frase#
 frase = str(input("Ingrese un palabra o frase:"))
