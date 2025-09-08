@@ -145,4 +145,24 @@ print("La media es :",media)
 #Ejer10#
 #Escribe un programa que invierta el orden de los dígitos de un número ingresado por el 
 #usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+#Solicito al usuario que ingrese un número#
+print("Ingrese un número entero, para luego mostrarselo invertido ")
+num=int(input())
+#inicializo invertido en 0#
+invertido = 0
+#condicional si es 0# 
+if num< 0:
+  #si es 0 saco el valor absoluto#
+  num=abs(num)
+  while num > 0:
+    digito = num % 10       # tomo el último dígito
+    invertido = invertido * 10 + digito  # lo agrego al nuevo número
+    num = num // 10         # elimino el último dígito
+  print("Número invertido:", invertido *-1)
+else:
+   while num > 0:
+    digito = num % 10       # tomo el último dígito
+    invertido = invertido * 10 + digito  # lo agrego al nuevo número
+    num = num // 10         # elimino el último dígito
+   print("Número invertido:", invertido )
 
