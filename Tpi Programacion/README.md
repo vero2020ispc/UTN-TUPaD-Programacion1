@@ -42,4 +42,4 @@ o Participación de los integrantes.
 Al pensar el código en módulos y funciones, cada participante se ocupó del desarrollo de un punto del menú principal y se lo pasaba a la otra para que lo pruebe, valide y detecte errores.
 Finalmente entre las dos probaron todo el programa en conjunto y una vez satisfechas se enfocaron en embellecerlo, ingresando saltos de línea y divisiones para que las salidas queden prolijas.
 Link del video: https://youtu.be/QuJQBehmwzA
-Link del repositorio: 
+Link del repositorio: https://github.com/vero2020ispc/UTN-TUPaD-Programacion1/tree/main/Tpi%20Programacion
