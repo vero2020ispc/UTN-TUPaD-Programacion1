@@ -1,0 +1,4 @@
+nombre,precio,cantidad
+lapicera,500,10
+goma,100,20
+fibron,500,10
