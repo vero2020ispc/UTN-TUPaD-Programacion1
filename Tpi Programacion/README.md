@@ -3,8 +3,7 @@ Descripción del programa.
 Está relacionado con un archivo .CSV que contine la siguiente información (cada fila corresponde a un país diferente):
 Nombre del país, población del país, superficie del país, continente al que pertenece.
 El programa permite interactuar con este archivo y buscar, ordenar y/o filtrar la información que continene. Además permite alimentarlo agregando nuevos registros (nuevos países) y también podemos buscar estadísticas de los ya ingresados.
-
-o Instrucciones de uso.
+Instrucciones de uso.
 Al iniciarlo muestra un menú principal con las acciones que el usuario puede elegir realizar:
 1. Agregar un país con todos los datos necesarios para almacenarse
 2. Actualizar los datos de Población y Superfice de un Pais
@@ -42,3 +41,5 @@ En este caso el programa indica que no hay países con ese nombre en el archivo
 o Participación de los integrantes.
 Al pensar el código en módulos y funciones, cada participante se ocupó del desarrollo de un punto del menú principal y se lo pasaba a la otra para que lo pruebe, valide y detecte errores.
 Finalmente entre las dos probaron todo el programa en conjunto y una vez satisfechas se enfocaron en embellecerlo, ingresando saltos de línea y divisiones para que las salidas queden prolijas.
+Link del video: https://youtu.be/QuJQBehmwzA
+Link del repositorio: 
